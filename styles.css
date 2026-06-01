@@ -28,6 +28,8 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+:target, #pricing, #about, #faq, #lessons, #contact { scroll-margin-top: 92px; }
 
 body {
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;

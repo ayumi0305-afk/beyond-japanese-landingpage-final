@@ -61,7 +61,10 @@ function Header() {
         </a>
         <nav className="nav" aria-label="Primary">
           <a href="about.html">About</a>
-          <a href="index.html#pricing">Lessons</a>
+          <a href="index.html#pricing" onClick={(e) => {
+            const el = document.getElementById("pricing");
+            if (el) { e.preventDefault(); el.scrollIntoView({ behavior: "smooth", block: "start" }); }
+          }}>Lessons</a>
           <a href="faq.html">FAQ</a>
           <a href="contact.html">Contact</a>
           <a href="https://www.instagram.com/beyond_japanese.ayumi/" target="_blank" rel="noopener" aria-label="Instagram"><Icon name="instagram" size={18} /></a>
