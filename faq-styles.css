@@ -1,0 +1,120 @@
+/* FAQ page — extends the main design system */
+
+.faq-hero {
+  padding: 140px 0 80px;
+  background: var(--cream);
+  text-align: center;
+}
+.faq-hero .eyebrow {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.faq-hero h1 {
+  font-size: clamp(48px, 6vw, 80px);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  color: #1B829E;
+  margin-bottom: 24px;
+}
+.faq-hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 600px;
+  margin: 0 auto;
+  text-wrap: pretty;
+}
+
+.faq-body {
+  background: var(--cream);
+  padding: 64px 0 120px;
+}
+
+.faq-section + .faq-section { margin-top: 72px; }
+
+.faq-section-head {
+  max-width: 880px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 0 32px;
+}
+.faq-section-head .index {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--red);
+  letter-spacing: 0.12em;
+}
+.faq-section-head h2 {
+  font-size: clamp(22px, 2.2vw, 28px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #593922;
+  margin: 0;
+}
+
+.faq-section-list {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* CTA at bottom — deep teal panel echoing the main LP CTA */
+.faq-cta {
+  background: var(--cream);
+  padding: 0 32px 120px;
+}
+.faq-cta-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  background: #1f5266;
+  border-radius: 28px;
+  padding: clamp(64px, 8vw, 96px) clamp(32px, 6vw, 88px);
+  text-align: center;
+  color: var(--white);
+}
+.faq-cta-inner h2 {
+  font-size: clamp(32px, 3.6vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  color: var(--white);
+  margin-bottom: 18px;
+  text-wrap: balance;
+}
+.faq-cta-inner p {
+  font-size: 17px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 520px;
+  margin: 0 auto 36px;
+}
+.faq-cta-inner .btn-primary {
+  background: var(--white);
+  color: #1f5266;
+  padding: 20px 36px;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+.faq-cta-inner .btn-primary:hover {
+  background: var(--beige);
+  color: #1f5266;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 768px) {
+  .faq-hero { padding: 96px 0 56px; }
+  .faq-body { padding: 48px 0 88px; }
+  .faq-section + .faq-section { margin-top: 56px; }
+  .faq-section-head { padding: 0 20px; }
+  .faq-section-list { padding: 0 20px; }
+  .faq-cta { padding: 0 20px 88px; }
+  .faq-cta-inner { padding: 48px 28px; }
+}

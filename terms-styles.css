@@ -1,0 +1,163 @@
+/* Terms page — extends the main design system */
+
+.terms-hero {
+  padding: clamp(96px, 12vw, 148px) 0 clamp(40px, 5vw, 64px);
+  background: var(--cream);
+}
+.terms-hero .eyebrow {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.terms-hero h1 {
+  font-size: clamp(40px, 5.4vw, 68px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--ink);
+  margin: 0 0 22px;
+  max-width: 12ch;
+}
+.terms-hero h1.terms-h1-long {
+  font-size: clamp(32px, 3.6vw, 50px);
+  line-height: 1.12;
+  max-width: 22ch;
+}
+.terms-hero .terms-lead {
+  font-size: 19px;
+  line-height: 1.75;
+  color: var(--brown);
+  max-width: 620px;
+  margin: 0;
+  text-wrap: pretty;
+}
+.terms-updated {
+  margin: 22px 0 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--stone);
+}
+.terms-subtitle-jp {
+  font-size: 17px !important;
+  color: var(--stone) !important;
+  margin-top: 10px !important;
+  letter-spacing: 0.02em;
+}
+
+/* Combined Terms & Policies — jump nav + grouped sections */
+.terms-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+.terms-jump a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.terms-jump a:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+}
+.terms-group {
+  scroll-margin-top: 100px;
+}
+.terms-group + .terms-group {
+  margin-top: clamp(56px, 7vw, 96px);
+}
+.terms-group-title {
+  font-size: clamp(28px, 3.2vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin: 0 0 8px;
+  padding-bottom: 22px;
+}
+
+.terms-body {
+  padding: clamp(48px, 6vw, 80px) 0 clamp(96px, 11vw, 140px);
+  background: var(--cream);
+}
+.terms-wrap {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.terms-block {
+  padding: 36px 0;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.terms-block:last-child { border-bottom: 1px solid var(--line); }
+
+.terms-block h2 {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.25;
+}
+.terms-block p {
+  font-size: 16.5px;
+  line-height: 1.8;
+  color: var(--brown);
+  margin: 0;
+  text-wrap: pretty;
+}
+.terms-block p + p { margin-top: 14px; }
+
+.terms-list {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.terms-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--brown);
+  text-wrap: pretty;
+}
+.terms-list li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 11px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+.terms-list + p { margin-top: 14px; }
+
+.terms-note {
+  margin-top: 48px;
+  font-size: 14px;
+  color: var(--stone);
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .terms-block {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 30px 0;
+  }
+  .terms-block h2 { font-size: 19px; }
+}

@@ -1,0 +1,259 @@
+/* Contact page — extends the main design system */
+
+.contact-page { background: var(--cream); }
+
+.contact-section {
+  padding: clamp(72px, 9vw, 120px) 0 clamp(96px, 11vw, 140px);
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: clamp(48px, 7vw, 96px);
+  align-items: center;
+}
+
+/* Left intro */
+.contact-intro .about-eyebrow-label,
+.contact-intro .eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 18px;
+}
+.contact-divider {
+  display: block;
+  width: 56px;
+  height: 2px;
+  background: var(--red);
+  border-radius: 999px;
+  margin-bottom: 36px;
+}
+.contact-intro h1 {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: clamp(44px, 5.4vw, 72px);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 32px;
+  text-wrap: balance;
+}
+.contact-intro p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--brown);
+  margin: 0;
+  max-width: 480px;
+  text-wrap: pretty;
+}
+.contact-intro-support {
+  margin-top: 24px !important;
+  font-size: 19px !important;
+  font-weight: 600;
+  color: var(--ink) !important;
+  letter-spacing: -0.01em;
+}
+
+/* What happens next — guidance block */
+.contact-next {
+  margin-top: 40px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+  max-width: 480px;
+}
+.contact-next-title {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 26px;
+}
+.contact-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-steps li {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.contact-step-num {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid var(--blue);
+  color: var(--blue);
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-variant-numeric: tabular-nums;
+}
+.contact-step-text {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+.contact-next-note {
+  margin-top: 28px !important;
+  font-size: 15.5px !important;
+  line-height: 1.75 !important;
+  color: var(--brown) !important;
+  max-width: 460px;
+}
+
+/* Right form card */
+.contact-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: clamp(32px, 4vw, 48px);
+  box-shadow: 0 1px 2px rgba(31, 42, 46, 0.03), 0 20px 48px rgba(31, 42, 46, 0.06);
+}
+.contact-field { margin-bottom: 26px; }
+.contact-field label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+.contact-field label .req { color: var(--red); margin-left: 4px; }
+.contact-field-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+.contact-field-label .req { color: var(--red); margin-left: 4px; }
+
+/* Stronger guidance copy under the heading */
+.contact-intro-guide {
+  margin-top: 4px !important;
+  font-size: 19px !important;
+  font-weight: 500;
+  line-height: 1.65 !important;
+  color: var(--ink-soft) !important;
+  max-width: 480px;
+}
+
+.contact-field input,
+.contact-field textarea,
+.contact-field .contact-select {
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 15px 18px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-field input::placeholder,
+.contact-field textarea::placeholder { color: var(--stone-light); }
+.contact-field input:focus,
+.contact-field textarea:focus,
+.contact-field .contact-select:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(13, 122, 153, 0.12);
+}
+
+/* Inquiry dropdown — matches Name/Email fields */
+.contact-field .contact-select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding-right: 46px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+.contact-field .contact-select.placeholder { color: var(--stone-light); }
+.contact-field .contact-select option { color: var(--ink); }
+.contact-field textarea {
+  min-height: 200px;
+  resize: vertical;
+  line-height: 1.6;
+}
+.contact-submit {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  padding: 18px 24px;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 22px rgba(198, 60, 71, 0.22);
+}
+.contact-submit:hover {
+  background: var(--red-soft);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(198, 60, 71, 0.28);
+}
+.contact-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  font-size: 14.5px;
+  color: var(--brown);
+}
+.contact-note svg { color: var(--blue); flex-shrink: 0; }
+.contact-success {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--green);
+}
+.contact-success.show { display: flex; }
+.contact-error {
+  display: none;
+  margin-top: 18px;
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--red);
+}
+.contact-error.show { display: block; }
+
+@media (max-width: 980px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: start;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .contact-intro p { max-width: none; }
+  .contact-next { max-width: none; }
+}
