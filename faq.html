@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FAQ — Beyond Japanese</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
-<link rel="stylesheet" href="faq-styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="faq-styles.css">
 </head>
 <body>
-<div id="root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-<script type="text/babel" src="sections.jsx?v=2"></script>
-<script type="text/babel" src="faq-page.jsx?v=2"></script>
+<header class="header" data-screen-label="01 Header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Beyond Japanese — back to home"><img src="images/logo.png" alt="Beyond Japanese" class="logo-img"></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="index.html#pricing">Lessons</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.instagram.com/beyond_japanese.ayumi/" target="_blank" rel="noopener" aria-label="Instagram" class="nav-ig"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><g><rect x="3" y="3" width="18" height="18" rx="5" style="stroke: rgb(183, 51, 64);"></rect><circle cx="12" cy="12" r="4" style="stroke: rgb(183, 51, 64);"></circle><circle cx="17.5" cy="6.5" r="1" stroke="none" style="fill: rgb(183, 51, 64);"></circle></g></svg></a>
+    </nav>
+    <a href="https://cal.com/beyond-japanese-lesson/30min" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Book a Trial Lesson</a>
+  </div>
+</header>
+<main>
+  <section class="faq-hero" data-screen-label="01 FAQ Hero">
+    <div class="container"><span class="eyebrow" style="font-size: 20px;">FAQ</span><h1 style="font-size: 60px;">Common Questions</h1><p>Everything you need to know before starting your Japanese journey.</p></div>
+  </section>
+  <div class="faq-body">
+      <section class="faq-section"><div class="faq-section-head"><span class="index">01</span><h2>Getting Started</h2></div><div class="faq-section-list">
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Do I need to know any Japanese before starting?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Not at all. Most students start as complete beginners. I'll begin from where you are — even if that's hiragana from scratch — and build at a pace that feels comfortable for you.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What does a trial lesson look like?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">A relaxed 30-minute conversation. I'll ask why you want to learn Japanese, what your trip or goals look like, and guide you through a small piece of real Japanese. No tests, no pressure — just a chance to see if learning with me feels right for you.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What if I'm shy about speaking?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">That's very normal. Lessons are designed so you build confidence slowly — I'll start small, use phrases you'll actually want to say, and there's no pressure to be perfect. Many students who started shy now speak comfortably.</div></div>
+      </div></section>
+      <section class="faq-section"><div class="faq-section-head"><span class="index">02</span><h2>Lessons & Learning</h2></div><div class="faq-section-list">
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>How long are the lesson sessions?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Trial lessons are 30 minutes, so you can meet me without pressure. Regular private lessons are 50 minutes, which gives time for a warm-up conversation, focused learning, speaking practice, and a short review without rushing.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What level are these lessons for?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Beginner-friendly through lower intermediate. Lessons are most useful for travelers, hobby learners, and anyone who wants practical Japanese for real conversations rather than test prep.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Can I focus on specific topics like travel, food, or culture?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Absolutely. Lessons are personalized — I can spend time on travel phrases, Kyoto-area culture, anime and manga vocabulary, restaurant Japanese, or anything else you're drawn to.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Do I get materials after the lesson?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Yes. After each lesson, you'll receive lesson notes, a vocabulary list, and optional homework on your personal dashboard, so you can review anytime between lessons.</div></div>
+      </div></section>
+      <section class="faq-section"><div class="faq-section-head"><span class="index">03</span><h2>Scheduling</h2></div><div class="faq-section-list">
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>How do I book a lesson?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Trial lessons are booked through Cal.com — you'll pick a time that works for both of us. After the trial, continuing students book directly with me by message so I can build a rhythm that suits your week.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What happens if I need to reschedule?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Life happens. You can reschedule up to 24 hours before your lesson at no charge — just send me a message and I'll find a new time that works for you.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What time zones do you work with?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Lessons are based in Japan time, and I'm flexible with students in Asia, Europe, and parts of North America. I'll find a time that fits your schedule during the trial.</div></div>
+      </div></section>
+      <section class="faq-section"><div class="faq-section-head"><span class="index">04</span><h2>Payments</h2></div><div class="faq-section-list">
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>How much do lessons cost?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Trial lessons are $20 for 30 minutes. Single private lessons are $40 for 50 minutes. The Beyond Starter Plan is $140 for 4 personalized lessons — a gentle beginner-friendly journey designed for steady progress.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>How do I pay?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Trial lessons are paid through the Cal.com booking page. For continuing lessons and the Starter Plan, I accept Wise and PayPal for easy international payments.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Do lesson packs expire?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">There's no harsh expiry. Lessons in the Starter Plan can be used at your own pace across several weeks or months. If life gets busy, I'll keep things flexible — just pause and resume when you're ready.</div></div>
+      </div></section>
+      <section class="faq-section"><div class="faq-section-head"><span class="index">05</span><h2>Travel & Practical Japanese</h2></div><div class="faq-section-list">
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>I'm visiting Japan soon. How early should I start?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Even a few lessons before your trip make a real difference. If you're flexible, starting 4–8 weeks before travel gives time to build the core phrases that come up at konbini, restaurants, stations, and shops.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Do you teach polite Japanese, casual Japanese, or both?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Both — naturally. I'll focus on the polite forms you'll need with shopkeepers, station staff, and new people, and add casual expressions for when you're chatting with friends or watching shows.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Will you help me prepare for specific situations on my trip?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Yes. If you tell me your itinerary or the situations you're most nervous about — ordering at an izakaya, asking for directions, checking in at a ryokan — I'll help you practice them before you go.</div></div>
+      </div></section>
+      <section class="faq-section"><div class="faq-section-head"><span class="index">06</span><h2>Technical Questions</h2></div><div class="faq-section-list">
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What platform do lessons happen on?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Lessons take place over Zoom. You'll get a calendar invite with the link once you book. No special software is needed — just a quiet space and a stable internet connection.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Do I need a textbook?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">No textbook required. All materials, notes, and vocabulary lists are provided through your personal student dashboard, which you can access anytime between lessons.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What if my internet drops mid-lesson?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">It happens. If the call drops, just rejoin — I'll be waiting. If it won't reconnect, I'll reschedule the remaining time at no charge.</div></div>
+      </div></section>
+  </div>
+  <section class="faq-cta" data-screen-label="08 FAQ Footer CTA">
+    <div class="faq-cta-inner"><h2>Still have questions?</h2><p>I'd be happy to help you find the right starting point.</p><a href="https://cal.com/beyond-japanese-lesson/30min" target="_blank" rel="noopener" class="btn btn-primary">Book a Trial Lesson <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div>
+  </section>
+</main>
+<footer class="footer" id="contact" data-screen-label="12 Footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="margin-bottom: 0px;"><img src="images/logo.png" alt="Beyond Japanese" class="logo-img"></a>
+        <p class="footer-tag">Calm, beginner-friendly Japanese lessons for travelers and Japan lovers — built around real life, not textbooks.</p>
+      </div>
+      <div class="footer-col"><h4>Site</h4><a href="index.html#about">About</a><a href="index.html#pricing">Lessons</a><a href="index.html#faq">FAQ</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="terms-policies.html">Terms &amp; Policies</a><a href="legal.html">Legal Notice</a></div>
+      <div class="footer-col"><h4>Get in Touch</h4><a href="contact.html">Contact Form</a><a href="https://www.instagram.com/beyond_japanese.ayumi/" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Beyond Japanese. Based in Kyoto, Japan.</span></div>
+  </div>
+</footer>
+<script src="app.js"></script>
 </body>
 </html>

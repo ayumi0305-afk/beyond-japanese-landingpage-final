@@ -1,20 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beyond Japanese — Explore Beyond with Japanese</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-<script type="text/babel" src="sections.jsx?v=2"></script>
-<script type="text/babel" src="app.jsx?v=2"></script>
+<header class="header" data-screen-label="01 Header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Beyond Japanese — back to home"><img src="images/logo.png" alt="Beyond Japanese" class="logo-img"></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="index.html#pricing">Lessons</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.instagram.com/beyond_japanese.ayumi/" target="_blank" rel="noopener" aria-label="Instagram" class="nav-ig"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><g><rect x="3" y="3" width="18" height="18" rx="5" style="stroke: rgb(183, 51, 64);"></rect><circle cx="12" cy="12" r="4" style="stroke: rgb(183, 51, 64);"></circle><circle cx="17.5" cy="6.5" r="1" stroke="none" style="fill: rgb(183, 51, 64);"></circle></g></svg></a>
+    </nav>
+    <a href="https://cal.com/beyond-japanese-lesson/30min" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Book a Trial Lesson</a>
+  </div>
+</header>
+<main>
+<section class="hero" data-screen-label="02 Hero">
+  <div class="hero-image" aria-hidden="true">
+    <img src="images/arashiyama-pond.jpg" alt="" class="hero-photo active" loading="eager">
+    <img src="images/arashiyama-back.JPG" alt="" class="hero-photo" loading="lazy">
+    <img src="images/kiyomizu-dera.jpg" alt="" class="hero-photo" loading="lazy">
+    <img src="images/to-ji.jpg" alt="" class="hero-photo" loading="lazy">
+  </div>
+  <div class="hero-fade" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Learn Japanese. Connect more deeply.</p>
+    <h1 class="h-display"><span class="hero-h1-line">Explore Beyond</span><br><span class="hero-h1-indent hero-h1-line">with Japanese</span></h1>
+    <p class="hero-sub">Practical Japanese lessons for travelers, Japan lovers, and curious learners who want to experience Japan more deeply.</p>
+    <p class="hero-support">Language changes the way you experience a place.</p>
+    <div class="hero-ctas"><a href="https://cal.com/beyond-japanese-lesson/30min" target="_blank" rel="noopener" class="btn btn-outline-red">Book a Trial Lesson <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div>
+  </div>
+</section>
+<section class="section section-cream designed-section" data-screen-label="03 Designed For">
+  <div class="container">
+    <div class="section-head designed-head">
+      <h2 class="h-section designed-title" style="color: rgb(13, 122, 153);">Designed for Japan lovers and travelers</h2>
+      <p class="designed-sub">Beyond Japanese is for people who want more than just phrases.<br>You'+AP+'ll learn practical Japanese you can use — and enjoy the journey along the way.</p>
+    </div>
+    <div class="benefit-grid">
+      <article class="benefit-card"><div class="benefit-icon" aria-hidden="true"><img src="images/icon-plane.png" alt="" loading="lazy"></div><div class="benefit-text"><h3 class="benefit-title" style="color: rgb(183, 51, 64);">Planning a trip to Japan</h3><p class="benefit-desc">Build confidence before you arrive.</p></div></article>
+      <article class="benefit-card"><div class="benefit-icon" aria-hidden="true"><img src="images/icon-chats.png" alt="" loading="lazy"></div><div class="benefit-text"><h3 class="benefit-title" style="color: rgb(183, 51, 64);">Want practical Japanese</h3><p class="benefit-desc">Learn language you'll actually use.</p></div></article>
+      <article class="benefit-card"><div class="benefit-icon" aria-hidden="true"><img src="images/icon-torii.png" alt="" loading="lazy"></div><div class="benefit-text"><h3 class="benefit-title" style="color: rgb(183, 51, 64);">Love Japanese culture</h3><p class="benefit-desc">Connect more deeply with Japan beyond the guidebooks.</p></div></article>
+      <article class="benefit-card"><div class="benefit-icon" aria-hidden="true"><img src="images/icon-users.png" alt="" loading="lazy"></div><div class="benefit-text"><h3 class="benefit-title" style="color: rgb(183, 51, 64);">Prefer personal guidance</h3><p class="benefit-desc">Learn at your own pace with personalized support.</p></div></article>
+    </div>
+  </div>
+</section>
+<section class="section section-white" id="about" data-screen-label="04 About Ayumi">
+  <div class="container">
+    <div class="about">
+      <div class="about-photo">
+        <img src="images/ayumi-arashiyama.JPEG" alt="Ayumi walking through Arashiyama" class="about-img active" loading="eager">
+        <img src="images/ayumi-flower.JPG" alt="Ayumi with flowers" class="about-img" loading="lazy">
+        <img src="images/ayumi-kimono.jpg" alt="Ayumi in kimono" class="about-img" loading="lazy">
+        <img src="images/ayumi-kyudo.jpg" alt="Ayumi practicing kyudo" class="about-img" loading="lazy">
+        <button class="about-arrow about-arrow-prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
+        <button class="about-arrow about-arrow-next" aria-label="Next photo"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
+        <div class="dots">
+          <button class="dot active" aria-label="Photo 1"></button>
+          <button class="dot" aria-label="Photo 2"></button>
+          <button class="dot" aria-label="Photo 3"></button>
+          <button class="dot" aria-label="Photo 4"></button>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="about-eyebrow-word" style="font-size: 25px; font-weight: 500;">About</span>
+        <span class="about-eyebrow-word" style="font-family: 'Plus Jakarta Sans'; font-weight: 700; color: rgb(88, 56, 34); font-size: 45px;">AYUMI</span>
+        <h2>A certified Japanese teacher and warm learning partner.</h2>
+        <p class="lead">Ayumi creates calm, personalized lessons where communication matters more than perfection. Lessons can include Kyoto life, travel situations, seasonal culture, anime, manga, or structured grammar — always at your pace.</p>
+        <a href="about.html" class="about-link" style="color: rgb(183, 51, 64);">Read Ayumi's story <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;stroke:rgb(183, 51, 64);"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-cream" id="lessons" data-screen-label="05 Practical Japanese">
+  <div class="container">
+    <div class="section-head practical-head">
+      <span class="eyebrow">Real moments</span>
+      <h2 class="h-section" style="color: rgb(88, 56, 34);">Practical Japanese<br>for real moments</h2>
+      <p class="lead">Learn Japanese for the moments you'll actually experience in Japan.</p>
+    </div>
+    <div class="scenes-grid">
+      <article class="scene-card"><img src="images/cafe.png" alt="" class="scene-bg" loading="lazy"><div class="scene-wash" aria-hidden="true"></div><div class="scene-overlay"><h3 class="scene-title">Cafés & Restaurants</h3><p class="scene-desc">Practice ordering naturally, asking questions politely, and enjoying local dining experiences with confidence.</p></div></article>
+      <article class="scene-card"><img src="images/konbini.jpeg" alt="" class="scene-bg" loading="lazy" style="object-position: 26% 32%;"><div class="scene-wash" aria-hidden="true"></div><div class="scene-overlay"><h3 class="scene-title">Convenience Stores</h3><p class="scene-desc">Learn useful konbini phrases for checkout, shopping, and everyday situations during your trip.</p></div></article>
+      <article class="scene-card"><img src="images/station.jpeg" alt="" class="scene-bg" loading="lazy"><div class="scene-wash" aria-hidden="true"></div><div class="scene-overlay"><h3 class="scene-title">Transportation & Directions</h3><p class="scene-desc">Navigate Japanese stations, trains, and ticket machines more comfortably and confidently.</p></div></article>
+      <article class="scene-card"><img src="images/street.jpeg" alt="" class="scene-bg" loading="lazy" style="object-position: 70% center;"><div class="scene-wash" aria-hidden="true"></div><div class="scene-overlay"><h3 class="scene-title">Real Conversations</h3><p class="scene-desc">Build confidence in natural conversations, greetings, and small everyday interactions in Japan.</p></div></article>
+    </div>
+  </div>
+</section>
+<section class="section section-large section-white" data-screen-label="06 Student Portal">
+  <div class="container">
+    <div class="portal">
+      <div class="portal-content">
+        <span class="eyebrow">Your ecosystem</span>
+        <h2 class="h-section" style="color: rgb(88, 56, 34);">Your Personal<br>Learning Space</h2>
+        <p class="lead">Say goodbye to scattered notes. Access your personalized curriculum, track your progress, and review flashcards in a beautiful, distraction-free dashboard.</p>
+        <div class="portal-features">
+          <div class="portal-feat"><span class="portal-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M5 12l5 5L20 7"></path></svg></span>Real-time progress tracking</div>
+          <div class="portal-feat"><span class="portal-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M5 12l5 5L20 7"></path></svg></span>Custom digital flashcard sets</div>
+          <div class="portal-feat"><span class="portal-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M5 12l5 5L20 7"></path></svg></span>Lesson recordings &amp; notes history</div>
+        </div>
+      </div>
+      <div class="portal-mock-wrap">
+        <div class="portal-mock-frame">
+          <button class="mock-nav prev" aria-label="Previous screen"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M15 18l-6-6 6-6"></path></svg></button>
+          <div class="portal-mock"><div class="portal-mock-inner">
+            <img src="images/1_dashboad.jpg" alt="Dashboard overview" class="mock-img active" loading="eager">
+            <img src="images/2_anouncement.jpg" alt="Announcements" class="mock-img" loading="lazy">
+            <img src="images/3quiz_after.jpg" alt="Quiz results" class="mock-img" loading="lazy">
+            <img src="images/4_flashcard.png" alt="Flashcards" class="mock-img" loading="lazy">
+          </div></div>
+          <button class="mock-nav next" aria-label="Next screen"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M9 18l6-6-6-6"></path></svg></button>
+          <div class="mock-dots" aria-hidden="true">
+            <button class="mock-dot active" aria-label="Screen 1"></button>
+            <button class="mock-dot" aria-label="Screen 2"></button>
+            <button class="mock-dot" aria-label="Screen 3"></button>
+            <button class="mock-dot" aria-label="Screen 4"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-cream" data-screen-label="07 Testimonials">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">From students</span><h2 class="h-section testimonials-title" style="color: rgb(88, 56, 34);">Real words from real students</h2></div>
+    <div class="tcarousel" style="--tpv: 2;">
+      <button class="tcarousel-arrow tcarousel-prev" aria-label="Previous reviews"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
+      <div class="tcarousel-viewport"><div class="tcarousel-track">
+        <div class="tcarousel-slide"><blockquote class="testimonial"><div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div><p class="testimonial-headline">Every lesson flies by.</p><p class="testimonial-body">Ayumi creates such a relaxed and natural atmosphere that I often lose track of time during our lessons. Thanks to her guidance, I can feel my communication and self-expression improving with every conversation.</p><div class="testimonial-by"><span class="testimonial-name">Bernard <span class="testimonial-flag">🇺🇸</span></span><span class="testimonial-sep" aria-hidden="true">·</span><span class="testimonial-meta">8 months</span></div></blockquote></div>
+        <div class="tcarousel-slide"><blockquote class="testimonial"><div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div><p class="testimonial-headline">Learning Japanese became something I look forward to.</p><p class="testimonial-body">Ayumi makes every lesson enjoyable while still helping me improve. She answers questions quickly, creates a comfortable learning environment, and genuinely takes an interest in her students.</p><div class="testimonial-by"><span class="testimonial-name">Eissa <span class="testimonial-flag">🇦🇪</span></span><span class="testimonial-sep" aria-hidden="true">·</span><span class="testimonial-meta">1.5 years</span></div></blockquote></div>
+        <div class="tcarousel-slide"><blockquote class="testimonial"><div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div><p class="testimonial-headline">I always feel supported and encouraged.</p><p class="testimonial-body">Ayumi is patient, approachable, and always willing to help. Her explanations are easy to follow, and she creates lessons that make learning Japanese feel achievable and rewarding.</p><div class="testimonial-by"><span class="testimonial-name">Mark <span class="testimonial-flag">🇳🇱</span></span><span class="testimonial-sep" aria-hidden="true">·</span><span class="testimonial-meta">3 months</span></div></blockquote></div>
+        <div class="tcarousel-slide"><blockquote class="testimonial"><div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div><p class="testimonial-headline">Every lesson feels productive and well structured.</p><p class="testimonial-body">Ayumi is incredibly patient and helpful. I appreciate how organized her lessons are, and I always leave each session feeling that I've made meaningful progress.</p><div class="testimonial-by"><span class="testimonial-name">Nate <span class="testimonial-flag">🇺🇸</span></span><span class="testimonial-sep" aria-hidden="true">·</span><span class="testimonial-meta">1.5 years</span></div></blockquote></div>
+      </div></div>
+      <button class="tcarousel-arrow tcarousel-next" aria-label="Next reviews"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
+    </div>
+    <div class="tcarousel-dots">
+      <button class="tcarousel-dot active" aria-label="Go to review 1"></button>
+      <button class="tcarousel-dot" aria-label="Go to review 2"></button>
+      <button class="tcarousel-dot" aria-label="Go to review 3"></button>
+      <button class="tcarousel-dot" aria-label="Go to review 4"></button>
+    </div>
+  </div>
+</section>
+<section class="section section-white" data-screen-label="08 Timeline">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">Inside a lesson</span><h2 class="h-section" style="color: rgb(88, 56, 34);">What happens in a<br>50-minute lesson?</h2><p class="lead">Relaxed, practical, and beginner-friendly — here's how the time actually feels, minute by minute.</p></div>
+    <div class="journey">
+      <div class="journey-step"><div class="journey-rail" aria-hidden="true"><span class="journey-dot"></span><div class="journey-time"><span class="journey-time-num">5–10</span><span class="journey-time-unit">min</span></div></div><div class="journey-card"><div class="journey-card-top"><span class="journey-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="100%" height="100%" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M30 7 h8 a4 4 0 0 1 4 4 v5 a4 4 0 0 1 -4 4 h-3 l-3.5 3.5 v-3.5 h-1.5 a4 4 0 0 1 -4 -4 v-5 a4 4 0 0 1 4 -4 z"></path><path d="M8 20 h15 a4 4 0 0 1 4 4 v9 a4 4 0 0 1 -4 4 h-7 l-4.5 4.5 v-4.5 h-3.5 a4 4 0 0 1 -4 -4 v-9 a4 4 0 0 1 4 -4 z"></path><circle cx="11.5" cy="28.5" r="1" fill="currentColor" stroke="none"></circle><circle cx="16" cy="28.5" r="1" fill="currentColor" stroke="none"></circle><circle cx="20.5" cy="28.5" r="1" fill="currentColor" stroke="none"></circle></g></svg></span></div><div class="journey-card-body"><h3 class="journey-title"><span class="journey-num">01</span><span class="journey-sep" aria-hidden="true"> • </span>Warm-up Conversation</h3><p class="journey-desc">Settle in with a relaxed chat — no script, no pressure. Just easing into Japanese the way a real conversation actually begins.</p></div></div></div>
+      <div class="journey-step"><div class="journey-rail" aria-hidden="true"><span class="journey-dot"></span><div class="journey-time"><span class="journey-time-num">15</span><span class="journey-time-unit">min</span></div></div><div class="journey-card"><div class="journey-card-top"><span class="journey-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="100%" height="100%" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 14 C 20 11, 12 10, 6 11 L 6 38 C 12 37, 20 38, 24 41"></path><path d="M24 14 C 28 11, 36 10, 42 11 L 42 38 C 36 37, 28 38, 24 41"></path><line x1="24" y1="14" x2="24" y2="41"></line></g></svg></span></div><div class="journey-card-body"><h3 class="journey-title"><span class="journey-num">02</span><span class="journey-sep" aria-hidden="true"> • </span>Learn Useful Japanese</h3><p class="journey-desc">Pick up phrases you'll genuinely reach for — ordering, asking, connecting — explained simply and tied to situations you'll really meet.</p></div></div></div>
+      <div class="journey-step featured"><div class="journey-rail" aria-hidden="true"><span class="journey-dot"></span><div class="journey-time"><span class="journey-time-num">15–20</span><span class="journey-time-unit">min</span></div></div><div class="journey-card"><div class="journey-card-top"><span class="journey-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="100%" height="100%" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="18" y="6" width="12" height="22" rx="6"></rect><path d="M10 24 a14 14 0 0 0 28 0"></path><line x1="24" y1="38" x2="24" y2="44"></line><line x1="18" y1="44" x2="30" y2="44"></line></g></svg></span></div><div class="journey-card-body"><h3 class="journey-title"><span class="journey-num">03</span><span class="journey-sep" aria-hidden="true"> • </span>Speaking & Shadowing Practice</h3><p class="journey-desc">The heart of the lesson. Say it out loud, echo natural speech, and feel the words start to land — this is where confidence is built.</p></div></div></div>
+      <div class="journey-step"><div class="journey-rail" aria-hidden="true"><span class="journey-dot"></span><div class="journey-time"><span class="journey-time-num">5–10</span><span class="journey-time-unit">min</span></div></div><div class="journey-card"><div class="journey-card-top"><span class="journey-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="100%" height="100%" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="8" width="28" height="34" rx="3"></rect><rect x="17" y="4" width="14" height="8" rx="2"></rect><line x1="16" y1="22" x2="32" y2="22"></line><line x1="16" y1="28" x2="32" y2="28"></line><line x1="16" y1="34" x2="26" y2="34"></line></g></svg></span></div><div class="journey-card-body"><h3 class="journey-title"><span class="journey-num">04</span><span class="journey-sep" aria-hidden="true"> • </span>Review & Support</h3><p class="journey-desc">Close with a gentle recap and notes to keep, so you leave each lesson knowing exactly what you can already do.</p></div></div></div>
+    </div>
+  </div>
+</section>
+<section class="section section-large section-cream" id="pricing" data-screen-label="09 Pricing">
+  <div class="container">
+    <header class="pricing-head"><span class="eyebrow">Start your journey</span><h2 class="h-section">Choose the learning style<br>that fits your journey.</h2><p class="pricing-sub">Start with a trial lesson, book individual sessions when you need them, or build confidence through a structured 4-lesson package.</p></header>
+    <div class="pricing-grid">
+      <article class="price-card">
+        <div class="price-col-main"><h3 class="price-name" style="color: rgb(88, 56, 34);">Trial Lesson</h3><div class="price-amount">$15 <span class="price-inline-unit">/ 30 min</span></div><div class="price-note">&#160;</div></div>
+        <span class="price-rule" aria-hidden="true"></span>
+        <div class="price-col-extra"><p class="price-desc">Meet Ayumi, discuss your goals, and experience a real Japanese conversation in a relaxed setting.</p><ul class="price-benefits"><li><span class="price-check" aria-hidden="true">✓</span>Goal consultation</li></ul><a class="price-link" href="https://cal.com/beyond-japanese-lesson/30min" target="_blank" rel="noopener" style="color: rgb(13, 122, 153);">Book Trial Lesson <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div>
+      </article>
+      <article class="price-card">
+        <div class="price-col-main"><h3 class="price-name" style="color: rgb(88, 56, 34);">Single Lesson</h3><div class="price-amount">$35 <span class="price-inline-unit">/ 50 min</span></div><div class="price-note">&#160;</div></div>
+        <span class="price-rule" aria-hidden="true"></span>
+        <div class="price-col-extra"><p class="price-desc">A personalized lesson tailored to your travel plans, interests, and conversation goals.</p><ul class="price-benefits"><li><span class="price-check" aria-hidden="true">✓</span>Personalized lesson</li><li><span class="price-check" aria-hidden="true">✓</span>Travel-focused topics</li></ul><a class="price-link" href="https://cal.com/beyond-japanese-lesson/50min" target="_blank" rel="noopener" style="color: rgb(13, 122, 153);">Book Single Lesson <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div>
+      </article>
+      <article class="price-card featured">
+        <div class="price-col-main"><h3 class="price-name" style="color: rgb(88, 56, 34);">4-Lesson Package</h3><div class="price-amount">$130 <span class="price-inline-unit">/ 4 × 50 min</span></div><div class="price-note">Includes $10 savings</div></div>
+        <span class="price-rule" aria-hidden="true"></span>
+        <div class="price-col-extra"><p class="price-desc">Everything you need to build confidence before your trip to Japan.</p><ul class="price-benefits"><li><span class="price-check" aria-hidden="true">✓</span>Student Portal Access</li><li><span class="price-check" aria-hidden="true">✓</span>Travel Japanese Resources</li><li><span class="price-check" aria-hidden="true">✓</span>Personalized Learning Plan</li></ul><a class="price-link price-link-featured" href="contact.html" style="color: rgb(198, 60, 71);">Book 4-Lesson Package <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div>
+      </article>
+    </div>
+    <div class="pricing-cta"><div class="pricing-note"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><g><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M16 3v4M8 3v4M3 11h18" style="stroke: rgb(13, 122, 153);"></path></g></svg> Trial booking via Cal.com</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><g><path d="M3 7h15a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a2 2 0 0 1-2-2V7z" style="stroke: rgb(13, 122, 153);"></path><path d="M3 7V5a2 2 0 0 1 2-2h11"></path><circle cx="17" cy="14" r="1.5"></circle></g></svg> Continuing lessons via Wise or PayPal</span></div></div>
+  </div>
+</section>
+<section class="section section-large section-white" id="faq" data-screen-label="10 FAQ">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">FAQ</span><h2 class="h-section" style="color: rgb(88, 56, 34);">Still Have Questions?</h2><p class="lead">Everything you need to know before booking your first lesson.</p></div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>I'm a complete beginner. Is this lesson for me?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Absolutely. Most students start as complete beginners. I'll begin from where you are — even if that's hiragana from scratch — and build at a pace that feels comfortable for you.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Can lessons focus on my upcoming trip to Japan?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Yes — that's one of my favorite things to teach. Tell me your itinerary or the situations you're nervous about, and we'll practice the real Japanese you'll use at restaurants, stations, shops, and ryokan before you go.</div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What happens if I need to reschedule?</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M6 9l6 6 6-6"></path></svg></button><div class="faq-a">Life happens. You can reschedule up to 24 hours before your lesson at no charge — just send me a message and I'll find a new time that works.</div></div>
+    </div>
+    <div class="faq-more-wrap"><a href="faq.html" class="faq-more">View More Questions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div>
+  </div>
+</section>
+<section class="final-cta" id="book" data-screen-label="11 Final CTA">
+  <div class="final-cta-split">
+    <div class="final-cta-photo-pane"><img src="images/footer.JPG" alt="" class="final-cta-photo"></div>
+    <div class="final-cta-text-pane"><div class="final-cta-content"><h2>Japan becomes different when you can connect through language.</h2><p class="lead">You are not just signing up for Japanese lessons. You are starting a deeper relationship with Japan.</p><a href="https://cal.com/beyond-japanese-lesson/30min" target="_blank" rel="noopener" class="btn btn-cta-light">Book a Trial Lesson <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:25px;height:25px;stroke:#1f5266;"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a></div></div>
+  </div>
+</section>
+</main>
+<footer class="footer" id="contact" data-screen-label="12 Footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="margin-bottom: 0px;"><img src="images/logo.png" alt="Beyond Japanese" class="logo-img"></a>
+        <p class="footer-tag">Calm, beginner-friendly Japanese lessons for travelers and Japan lovers — built around real life, not textbooks.</p>
+      </div>
+      <div class="footer-col"><h4>Site</h4><a href="#about">About</a><a href="index.html#pricing">Lessons</a><a href="#faq">FAQ</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="terms-policies.html">Terms &amp; Policies</a><a href="legal.html">Legal Notice</a></div>
+      <div class="footer-col"><h4>Get in Touch</h4><a href="contact.html">Contact Form</a><a href="https://www.instagram.com/beyond_japanese.ayumi/" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Beyond Japanese. Based in Kyoto, Japan.</span></div>
+  </div>
+</footer>
+<script src="app.js"></script>
 </body>
 </html>

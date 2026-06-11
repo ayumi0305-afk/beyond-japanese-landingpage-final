@@ -68,13 +68,13 @@
 /* CTA at bottom — deep teal panel echoing the main LP CTA */
 .faq-cta {
   background: var(--cream);
-  padding: 0 32px 120px;
+  padding: 0 0 120px;
 }
 .faq-cta-inner {
-  max-width: 1080px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   background: #1f5266;
-  border-radius: 28px;
+  border-radius: 0;
   padding: clamp(64px, 8vw, 96px) clamp(32px, 6vw, 88px);
   text-align: center;
   color: var(--white);
@@ -115,6 +115,6 @@
   .faq-section + .faq-section { margin-top: 56px; }
   .faq-section-head { padding: 0 20px; }
   .faq-section-list { padding: 0 20px; }
-  .faq-cta { padding: 0 20px 88px; }
+  .faq-cta { padding: 0 0 88px; }
   .faq-cta-inner { padding: 48px 28px; }
 }
